@@ -17,20 +17,20 @@ at `http://localhost:3000/toys`. You can also check out
 
 ## Fetch Andy's Toys
 
-On the `index.html` page, there is a `div` with the `id` "toy-collection."
+<!-- On the `index.html` page, there is a `div` with the `id` "toy-collection."
 
 When the page loads, make a 'GET' request to fetch all the toy objects. With the
 response data, make a `<div class="card">` for each toy and add it to the
-toy-collection `div`.
+toy-collection `div`. -->
 
 ## Add Toy Info to the Card
 
 Each card should have the following child elements:
-
+<!-- 
 * `h2` tag with the toy's name
 * `img` tag with the `src` of the toy's image attribute and the class name "toy-avatar"
 * `p` tag with how many likes that toy has
-* `button` tag with a class "like-btn"
+* `button` tag with a class "like-btn" -->
 
 After all of that, the toy card should resemble:
 
@@ -46,11 +46,11 @@ After all of that, the toy card should resemble:
 ## Add a New Toy
 
 When a user submits the toy form, two things should happen:
-
+<!-- 
 * a `POST` request should be sent to `http://localhost:3000/toys` and the new
-  toy added to Andy's Toy Collection.
-* If the post is successful, the toy should be added to the DOM without
-  reloading the page.
+  toy added to Andy's Toy Collection. -->
+<!-- * If the post is successful, the toy should be added to the DOM without
+  reloading the page. -->
 
 In order to send a POST request via Fetch, give the Fetch a second argument of
 an object. This object should specify the method as `POST` and also provide the
@@ -76,12 +76,12 @@ For examples, refer to the [documentation](https://developer.mozilla.org/en-US/d
 ## Increase Toy's Likes
 
 When a user clicks on a toy's like button, two things should happen:
-
+<!-- 
 * A `patch` request (i.e., `method: "PATCH"`) should be sent to the server at
   `http://localhost:3000/toys/:id`, updating the number of likes that the
   specific toy has
 * If the patch is successful, the toy's like count should be updated in the DOM
-  without reloading the page
+  without reloading the page -->
 
 The headers and body should look something like this:
   
